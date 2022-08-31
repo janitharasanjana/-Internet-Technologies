@@ -17,10 +17,13 @@
 </head>
 <body>
 <h1>hellow how are you</h1>
+<button onclick="changetext()"> change</button>
 <script>
+ function changetext(){
+   //simple js cod for changing the h1 text
+   document.getElementsByTagName("h1")[0].innerText="this was change by js"
+ }
 
-  //simple js cod for changing the h1 text
-  document.getElementsByTagName("h1")[0].innerText="this was change by js"
 </script>
 
 
