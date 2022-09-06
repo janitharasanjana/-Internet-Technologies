@@ -19,7 +19,7 @@
 
   <h1>forms</h1>
   <hr>
-<form action="gedara">
+<form action="gedara" method="post">
   <fieldset>
     <legend>Customer table</legend>
     <label for="txtcusid">CustomerId</label>
@@ -28,21 +28,24 @@
     <br>
 
     <label for="txtcusname">CustomerName</label>
-    <input type="text" id="txtcusname" >
+    <input type="text" id="txtcusname" name="customername" >
     <br>
     <br>
 
     <label for="txtcusaddress">Address</label>
-    <input type="text" id="txtcusaddress">
+    <input type="text" id="txtcusaddress"name="customeraddress">
     <br>
     <br>
 
     <label for="txtcussalary">salary</label>
-    <input type="number"  id="txtcussalary">
+    <input type="number"  id="txtcussalary"name="customersallary">
     <br>
     <br>
 
+    <input type="checkbox"name="option" value="ijse">
+
     <button>save customer</button>
+    <input type="reset">
 
   </fieldset>
 </form>
