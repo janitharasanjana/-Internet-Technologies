@@ -19,7 +19,7 @@
 
   <h1>forms</h1>
   <hr>
-<form action="gedara" method="post">
+<form action="gedara" method="post" id="cusForm">
   <fieldset>
     <legend>Customer table</legend>
     <label for="txtcusid">CustomerId</label>
@@ -42,6 +42,14 @@
     <br>
     <br>
 
+    <label for="txtGendermale">male</label>
+    <input type="radio"name="gender" id="txtGendermale" value="male">
+
+    <label for="txtGenderfemale">female</label>
+    <input type="radio"name="gender" id="txtGenderfemale" value="female">
+    <br>
+
+
     <input type="checkbox"name="option" value="ijse">
 
     <button>save customer</button>
@@ -51,6 +59,16 @@
 
   </fieldset>
 </form>
+  <br>
+  <br>
+
+  <hr>
+<br>
+
+<button form="cusForm">save customer</button>
+  <button>update customer</button>
+  <button>delete customer</button>
+
 
 </body>
 </html>
